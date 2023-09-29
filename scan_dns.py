@@ -7,9 +7,8 @@ import threading
 
 
 def thread():
-    # Para cada nome
     for nome in nomes:
-        dns = nome.strip() + "." + dominio
+        dns = nome.strip() + "." + site
 
         try:
             print(dns + ": " + socket.gethostbyname(dns))
@@ -18,7 +17,7 @@ def thread():
 
 
 # Domínio a ser testado
-dominio = "google.com"
+site = "univali.br"
 
 # Abre o arquivo wordlist
 with open("brute-force.txt") as arquivo:
