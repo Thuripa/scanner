@@ -4,7 +4,7 @@
 
 import socket
 
-host = "localhost"
+host = "192.168.0.1"
 portas = [21, 22, 23, 80, 443]
 
 for porta in portas:
