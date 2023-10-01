@@ -4,7 +4,7 @@ import nmap
 scanNmap = nmap.PortScanner()
 
 # Inicia o scan nas portas 22 e 80 -F (scan rápido) -O (OS detection)
-scanNmap.scan("192.168.0.1", "22, 80", "-F -O", True)
+scanNmap.scan("192.168.0.1", "22, 80", "-sS", True)
 
 # Exibe a linha de comando
 print(scanNmap.command_line())
